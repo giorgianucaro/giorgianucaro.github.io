@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giorgia Nucaro</title>
+
+    <link rel="stylesheet" href="./assets/scss/main.scss" />
+
+    <!--CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top justify-content-around bg-white p-md-3 shadow">
+      <div class="container-fluid mx-1">
+        <a class="navbar-brand" href="#welcome">
+          <img src="./assets/images/logo.png" height="50" class="d-inline-block align-top" alt="" />
+        </a>
+        <button
+          class="navbar-toggler collapsed d-flex d-md-none flex-column justify-content-around py-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mt-4 mt-md-0" id="navbarNav">
+          <ul class="navbar-nav fs-6">
+            <li class="mx-2">
+              <a class="nav-link" href="#my-world">My world</a>
+            </li>
+            <li class="mx-2">
+              <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="mx-2">
+              <a class="nav-link" href="#my-latest-works">My latest works</a>
+            </li>
+            <li class="mx-2">
+              <a class="nav-link" href="#my-skills">My skills</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Welcome Desktop -->
+    <section class="container min-vh-100 p-0 d-none d-md-flex justify-content-center align-items-center" id="welcome">
+      <div class="text-primary me-10">
+        <h1><strong class="text-secondary">Hi</strong>, <br />I'm Giorgia</h1>
+        <h6 class="text-uppercase fw-lighter mb-5">Aspirating UI/UX Designer</h6>
+        <a class="btn btn-primary btn-lg rounded-4" href="#contacts">contact me</a>
+      </div>
+      <img src="./assets/images/vignette_home.png" alt="Vignette Image" class="main-image" />
+    </section>
+
+    <!-- Welcome Mobile -->
+    <section class="container min-vh-100 pt-8 d-flex d-md-none justify-content-center align-items-center flex-column" id="welcome">
+      <img src="./assets/images/vignette_home.png" alt="Vignette Image" class="main-image mb-6" />
+      <h1><strong class="text-secondary">Hi</strong>, I'm Giorgia</h1>
+      <span class="text-primary text-uppercase fw-lighter mb-5">Aspirating UI/UX Designer</span>
+      <a class="btn btn-primary btn-lg rounded-4" href="#contacts">contact me</a>
+    </section>
+
+    <!-- My world Desktop + Mobile -->
+    <section class="container h-100 px-4 px-md-0" id="my-world">
+      <div class="h-100 position-relative hover-zoom">
+        <h1 class="mb-10 mb-md-6">A whole other world...</h1>
+        <div class="w-60 w-md-40">
+          <h5 class="fw-bolder">Vibes are all that matters.</h5>
+          <p class="fs-6 fw-lighter">
+            Anything that can conveying emotion is the key to a 100% immersive experience. What i want to convey with my work are the sensations and
+            emotions that can hit someone.
+          </p>
+        </div>
+        <div class="position-absolute end-0 bottom-20 bottom-md-50 w-60 w-md-40 text-md-end">
+          What i want to convey are not souvenirs photos, on the contrary, i want to immerse people in the mood,
+          <strong>my mood.</strong>
+        </div>
+        <img src="./assets/images/image-1.jpg" alt="image-1" class="rounded-pill world-image position-absolute world-image-1" />
+        <img src="./assets/images/image-2.jpg" alt="image-2" class="rounded-pill world-image position-absolute world-image-2" />
+        <img src="./assets/images/image-3.jpg" alt="image-3" class="rounded-pill world-image position-absolute world-image-3" />
+        <img src="./assets/images/image-4.jpg" alt="image-4" class="rounded-pill world-image position-absolute world-image-4" />
+        <img src="./assets/images/image-5.jpg" alt="image-5" class="rounded-pill world-image position-absolute world-image-5" />
+        <img src="./assets/images/image-6.jpg" alt="image-6" class="rounded-pill world-image position-absolute world-image-6" />
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section class="container d-none d-md-flex justify-content-center align-items-center" id="about-me">
+      <div class="flex-grow-1 w-0">
+        <img src="./assets/images/face.jpeg" alt="Profile photo" class="vignette-image rounded-4 d-block m-auto" />
+      </div>
+      <div class="w-0 flex-grow-1 text-primary">
+        <h1 class="mb-6">About me</h1>
+        <p class="fs-6 fw-lighter">
+          My name is Giorgia and i live in Pordenone. After years of chemistry, i decided to get back in the game and follow my true passion. I have
+          always loved art, design and their application in the everyday life.
+        </p>
+        <p class="fs-6 fw-lighter mb-4">
+          I decided to become a UX/UI designer because rapresents, for me, the perfect match between creativity and scientific thinking.
+        </p>
+        <a class="btn btn-primary btn-lg rounded-4" href="./assets/docs/CV.pdf" target="_blank">view my CV</a>
+      </div>
+    </section>
+
+    <!-- About me Mobile -->
+    <section
+      class="container d-flex d-md-none justify-content-center align-items-center flex-column text-primary"
+      style="max-width: 16rem"
+      id="about-me"
+    >
+      <h1 class="mb-6">About me</h1>
+      <img src="./assets/images/face.jpeg" alt="Profile photo" class="vignette-image rounded-4 d-block shadow mb-5" />
+      <p class="fs-6 fw-lighter">
+        My name is Giorgia and i live in Pordenone. After years of chemistry, i decided to get back in the game and follow my true passion. I have
+        always loved art, design and their application in the everyday life.
+      </p>
+      <p class="fs-6 fw-lighter mb-5">
+        I decided to become a UX/UI designer because rapresents, for me, the perfect match between creativity and scientific thinking.
+      </p>
+      <a class="btn btn-primary btn-lg rounded-4" href="./assets/docs/CV.pdf" target="_blank">view my CV</a>
+    </section>
+
+    <!-- My latest Works Desktop + Mobile -->
+    <section class="container text-primary" id="my-latest-works">
+      <h1 class="mb-6 text-center">My latest works</h1>
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap">
+        <!-- Project 1 card -->
+        <div class="card hover-zoom rounded-4 w-48 mb-4 mb-md-0 w-md-16rem w-lg-24rem">
+          <img class="card-img-top rounded-4" src="./assets/images/Mockup_grafica.jpg" alt="Mockup_grafica" />
+          <div class="card-body text-center bg-primary">
+            <h5 class="card-title text-uppercase fw-lighter text-white">Project 1</h5>
+            <p class="card-text text-white">Logo and Brand identity</p>
+          </div>
+        </div>
+        <!-- Project 2 card -->
+        <div class="card hover-zoom rounded-4 w-48 mb-4 mb-md-0 w-md-16rem w-lg-24rem">
+          <img class="card-img-top rounded-4" src="./assets/images/MacBook-Pro-16_mockup_discovery-1.png" alt="MacBook-Pro-16_mockup_discovery-1" />
+          <div class="card-body text-center bg-primary">
+            <h5 class="card-title text-uppercase text-white">Project 2</h5>
+            <p class="card-text text-white">Discovery, part 1</p>
+          </div>
+        </div>
+        <!-- Project 3 card -->
+        <div class="card hover-zoom rounded-4 w-48 w-md-16rem w-lg-24rem">
+          <img class="card-img-top rounded-4" src="./assets/images/MacBook-Pro-16_mockup_discovery-2.png" alt="MacBook-Pro-16_mockup_discovery-2" />
+          <div class="card-body text-center bg-primary">
+            <h5 class="card-title text-uppercase text-white">Project 3</h5>
+            <p class="card-text text-white">Discovery, part 2</p>
+          </div>
+        </div>
+        <!-- Project 4 card -->
+        <div class="card hover-zoom rounded-4 w-48 w-md-16rem w-lg-24rem">
+          <img
+            class="card-img-top rounded-4"
+            src="./assets/images/MacBook-Pro-16_mockup_Wireframing_1.png"
+            alt="MacBook-Pro-16_mockup_Wireframing_1"
+          />
+          <div class="card-body text-center bg-primary">
+            <h5 class="card-title text-uppercase text-white">Project 4</h5>
+            <p class="card-text text-white">Wireframing, part 1</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Skills Desktop + Mobile -->
+    <section class="container" id="my-skills">
+      <h1 class="mb-6 text-center">My Skills</h1>
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <!-- Soft skills card -->
+        <div class="card border-0 mb-6 mb-md-0" style="width: 24rem">
+          <div class="card-body">
+            <h2 class="card-title text-left text-md-center mb-4 ps-3 ps-md-0">Soft skills</h2>
+            <ul class="list-group">
+              <!-- Accuracy item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Accuracy</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">9</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-90 rounded-pill" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <!-- Creativity item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Creativity</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">8,5</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-85 rounded-pill" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <!-- Team Working item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Team Working</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">8,5</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-85 rounded-pill" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <!-- Pro active item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Pro active</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">9,5</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-95 rounded-pill" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <!-- People oriented item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">People oriented</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">8</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-80 rounded-pill" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <!-- Problem solving item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Problem solving</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">9,5</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-95 rounded-pill" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Hard skills card -->
+        <div class="card border-0 rounded-4 bg-primary mb-6 mb-md-0" style="width: 18rem">
+          <div class="card-body">
+            <h2 class="card-title text-center mb-4 text-white">Hard skills</h2>
+            <ul class="list-group">
+              <!-- Grafic item -->
+              <li class="list-group-item text-center bg-primary">
+                <h5 class="fw-lighter text-white">Grafic</h5>
+              </li>
+              <!-- Discovery item -->
+              <li class="list-group-item text-center bg-primary">
+                <h5 class="fw-lighter text-white">Discovery</h5>
+              </li>
+              <!-- Wireframing item -->
+              <li class="list-group-item text-center bg-primary">
+                <h5 class="fw-lighter text-white">Wireframing</h5>
+              </li>
+              <!-- Prototipying item -->
+              <li class="list-group-item text-center bg-primary">
+                <h5 class="fw-lighter text-white">Prototipying</h5>
+              </li>
+              <!-- Copywriting item -->
+              <li class="list-group-item text-center bg-primary">
+                <h5 class="fw-lighter text-white">Copywriting</h5>
+              </li>
+              <!-- HTML & CSS item -->
+              <li class="list-group-item text-center bg-primary">
+                <h5 class="fw-lighter text-white">HTML & CSS</h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Software card -->
+        <div class="card border-0 mb-6 mb-md-0" style="width: 24rem">
+          <div class="card-body">
+            <h2 class="card-title text-left text-md-center mb-4 ps-3 ps-md-0">Software</h2>
+            <ul class="list-group">
+              <!-- Photoshop item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Photoshop</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">6,5</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-65 rounded-pill" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <!-- Creativity item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Illustrator</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">7,5</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-75 rounded-pill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <!-- Team Working item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Xd</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">9</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-90 rounded-pill" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <!-- Pro active item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Microsoft Word</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">9,5</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-95 rounded-pill" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <!-- People oriented item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Microsoft PowerPoint</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">10</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-100 rounded-pill" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+              <!-- Problem solving item -->
+              <li class="list-group-item">
+                <h5 class="fw-lighter d-inline-block w-60">Microsoft Excel</h5>
+                <div class="d-inline-block w-35">
+                  <h6 class="fw-lighter d-block float-end w-35 mb-0">8,5</h6>
+                  <div class="progress rounded-pill bg-white border border-primary w-100">
+                    <div class="progress-bar w-85 rounded-pill" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts Desktop -->
+    <section class="container-fluid d-none d-md-flex p-8 justify-content-center align-items-center bg-primary" id="contacts">
+      <div class="flex-grow-1 w-0 d-flex flex-column justify-content-center align-items-center">
+        <div class="w-50">
+          <h3 class="text-white mb-4">You can follow me here!</h3>
+          <a class="me-4" href="https://www.linkedin.com/in/giorgia-nucaro-b43b53247/" target="_blank">
+            <img src="./assets/images/linkedin_logo.png" alt="Linkedin logo" class="social-logo" />
+          </a>
+          <a href="https://instagram.com/nucarogiorgia" target="_blank">
+            <img src="./assets/images/instagram_logo.png" alt="Instagram logo" class="social-logo" />
+          </a>
+        </div>
+      </div>
+      <div class="flex-grow-1 w-0 d-flex flex-column justify-content-center align-items-center">
+        <div class="w-50">
+          <h3 class="text-white mb-4">My contacts</h3>
+          <span class="text-white fs-5 fw-lighter">+ 39 320 776 2580</span>
+          <span class="text-white fs-5 fw-lighter">giorgianucaro03@gmail.com</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts Mobile -->
+    <section class="container-fluid d-md-none bg-primary" id="contacts">
+      <div class="p-4">
+        <h3 class="text-white mb-4">You can follow me here!</h3>
+        <a class="me-4" href="https://www.linkedin.com/in/giorgia-nucaro-b43b53247/" target="_blank">
+          <img src="./assets/images/linkedin_logo.png" alt="Linkedin logo" class="social-logo" />
+        </a>
+        <a href="https://instagram.com/nucarogiorgia" target="_blank">
+          <img src="./assets/images/instagram_logo.png" alt="Instagram logo" class="social-logo" />
+        </a>
+      </div>
+      <div class="p-4">
+        <h3 class="text-white mb-4">My contacts</h3>
+        <span class="text-white fs-5 fw-lighter">+ 39 320 776 2580</span>
+        <span class="text-white fs-5 fw-lighter">giorgianucaro03@gmail.com</span>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="container-fluid" style="background-color: #414377" id="footer">
+      <h5 class="text-white fw-lighter text-end p-3 d-none d-md-block">Giorgia Nucaro &copy; All Rights Reserved</h5>
+      <div class="text-white fw-lighter text-end d-md-none">Giorgia Nucaro &copy; All Rights Reserved</div>
+    </section>
+
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

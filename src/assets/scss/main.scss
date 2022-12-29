@@ -1,0 +1,282 @@
+/*********************
+-- Table of contents
+
+- Custom variables 
+- Bootstrap functions
+- Bootstrap variables
+- Bootstrap mixins
+- Custom map amends
+- Custom utilities
+- Bootstrap main import
+
+***********************
+*/
+
+// Import our variable overrides.
+// Go here to set custom values for Bootstrap vars
+@import "./abstracts/variables";
+
+// Import Bootstrap functions, vars and mixins
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Import our map amends
+// Go here to run any Sass map amends on Bootstrap Sass maps
+@import "./abstracts/map-amends";
+
+// Import our utility overrides
+// Go here to amend or set custom utilities using the Bootstrap API
+@import "./utilities/bootstrap-api-utilities";
+
+// Bootstrap main import
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body {
+  height: 100%;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0 transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $primary;
+  border-radius: 0px;
+  border: 0px solid transparent;
+}
+
+.container {
+  padding-top: 150px;
+  min-height: calc(100vh + 150px);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: lighter !important;
+  color: $primary;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: $primary;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+.btn-primary:hover {
+  background-color: $secondary;
+  border-color: white;
+}
+
+.image-square {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.w-maxContent {
+  width: max-content;
+}
+
+.w-100vh {
+  width: 100vh;
+}
+.h-100vh {
+  height: 100vh;
+}
+
+.navbar-nav > li {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.main-image {
+  height: 250px;
+}
+
+.hover-zoom img {
+  transition: transform 0.5s ease;
+}
+.hover-zoom img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+img.world-image {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+img.world-image-1 {
+  top: 10%;
+  left: 0%;
+}
+img.world-image-2 {
+  top: 18%;
+  left: 50%;
+}
+img.world-image-3 {
+  top: 40%;
+  left: 60%;
+}
+img.world-image-4 {
+  top: 52%;
+  right: 43%;
+}
+img.world-image-5 {
+  top: 60%;
+  right: 78%;
+}
+img.world-image-6 {
+  top: 75%;
+  right: 78%;
+}
+
+@media (min-width: 768px) {
+  img.world-image {
+    height: 100px;
+    width: 100px;
+  }
+  img.world-image-1 {
+    top: 45%;
+    left: 0;
+  }
+  img.world-image-2 {
+    top: 60%;
+    left: 20%;
+  }
+  img.world-image-3 {
+    top: 45%;
+    left: 40%;
+  }
+  img.world-image-4 {
+    top: 23%;
+    right: 40%;
+  }
+  img.world-image-5 {
+    top: 10%;
+    right: 20%;
+  }
+  img.world-image-6 {
+    top: 15%;
+    right: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  img.world-image {
+    height: 125px;
+    width: 125px;
+  }
+  img.world-image-1 {
+    top: 40%;
+    left: 0;
+  }
+  img.world-image-2 {
+    top: 50%;
+    left: 20%;
+  }
+  img.world-image-3 {
+    top: 40%;
+    left: 40%;
+  }
+  img.world-image-4 {
+    top: 15%;
+    right: 40%;
+  }
+  img.world-image-5 {
+    top: 10%;
+    right: 20%;
+  }
+  img.world-image-6 {
+    top: 20%;
+    right: 0;
+  }
+}
+
+@media (min-width: 1500px) {
+  img.world-image {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+img.vignette-image {
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  img.vignette-image {
+    height: 350px;
+    width: 250px;
+  }
+}
+@media (min-width: 992px) {
+  img.vignette-image {
+    height: 400px;
+    width: 300px;
+  }
+}
+
+.list-group .list-group-item {
+  border: 0;
+  height: 60px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $primary;
+}
+
+.social-logo {
+  width: 3rem;
+}
+
+// /* Medium devices (tablets, 768px and up) */
+// @media (min-width: 576px) {
+//   .main-image {
+//     width: 300px;
+//     height: 300px;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   .main-image {
+//     width: 200px;
+//     height: 200px;
+//   }
+// }
+
+// @media (min-width: 992px) {
+//   .main-image {
+//     width: 350px;
+//     height: 350px;
+//   }
+// }
+
+// @media (min-width: 1400px) {
+//   .main-image {
+//     width: 350px;
+//     height: 350px;
+//   }
+// }
