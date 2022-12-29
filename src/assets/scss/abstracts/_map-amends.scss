@@ -6,6 +6,8 @@
 // Merge the maps
 // $theme-colors: map-merge($theme-colors, $custom-colors);
 
+@import "~bootstrap/scss/maps";
+
 $spacers: map-merge(
   (
     0: 0,
