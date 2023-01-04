@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Giorgia Nucaro</title>
 
+  <meta property="og:title" content="Giorgia Nucaro Portfolio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://giorgianucaro.github.io/" />
+  <meta property="og:image" content="http://giorgianucaro.github.io/favicon.ico" />
+
+  <link rel="icon" href="favicon.ico" />
+
   <link rel="stylesheet" href="./assets/scss/main.scss" />
 
   <!--CSS-->
@@ -373,11 +380,10 @@
     </div>
   </section>
 
-  <!-- Contacts Desktop -->
-  <section class="container-fluid d-none d-md-flex p-8 justify-content-center align-items-center bg-primary"
-    id="contacts">
-    <div class="flex-grow-1 w-0 d-flex flex-column justify-content-center align-items-center">
-      <div class="w-50">
+  <!-- Contacts -->
+  <section class="container-fluid p-0 p-lg-8 bg-primary" id="contacts">
+    <div class="row">
+      <div class="col-lg p-6 pb-4 p-lg-0 text-center">
         <h3 class="text-white mb-4">You can follow me here!</h3>
         <a class="me-4" href="https://www.linkedin.com/in/giorgia-nucaro-b43b53247/" target="_blank">
           <img src="./assets/images/linkedin_logo.png" alt="Linkedin logo" class="social-logo" />
@@ -386,31 +392,24 @@
           <img src="./assets/images/instagram_logo.png" alt="Instagram logo" class="social-logo" />
         </a>
       </div>
-    </div>
-    <div class="flex-grow-1 w-0 d-flex flex-column justify-content-center align-items-center">
-      <div class="w-50">
-        <h3 class="text-white mb-4">My contacts</h3>
-        <p class="text-white fs-5 fw-lighter text-nowrap">+ 39 320 776 2580</p>
-        <p class="text-white fs-5 fw-lighter text-nowrap">giorgianucaro03@gmail.com</p>
+      <div class="col-lg p-6 p-lg-0">
+        <h3 class="text-white mb-4 text-center">Contact me</h3>
+        <form action="https://formsubmit.co/giorgianucaro03@gmail.com" method="POST" class="text-white">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" name="name" class="form-control" id="name" aria-describedby="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your email</label>
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
       </div>
-    </div>
-  </section>
-
-  <!-- Contacts Mobile -->
-  <section class="container-fluid d-md-none bg-primary" id="contacts">
-    <div class="p-4">
-      <h3 class="text-white mb-4">You can follow me here!</h3>
-      <a class="me-4" href="https://www.linkedin.com/in/giorgia-nucaro-b43b53247/" target="_blank">
-        <img src="./assets/images/linkedin_logo.png" alt="Linkedin logo" class="social-logo" />
-      </a>
-      <a href="https://instagram.com/nucarogiorgia" target="_blank">
-        <img src="./assets/images/instagram_logo.png" alt="Instagram logo" class="social-logo" />
-      </a>
-    </div>
-    <div class="p-4">
-      <h3 class="text-white mb-4">My contacts</h3>
-      <p class="text-white fs-5 fw-lighter">+ 39 320 776 2580</p>
-      <p class="text-white fs-5 fw-lighter">giorgianucaro03@gmail.com</p>
     </div>
   </section>
 

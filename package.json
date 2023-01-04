@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "parcel",
     "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build --public-url https://giorgianucaro.github.io/portfolio-bootstrap/",
+    "build": "parcel build --public-url ./",
+    "postbuild": "cp src/favicon.ico dist",
     "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "keywords": [],
